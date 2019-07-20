@@ -1,0 +1,43 @@
+@media only screen and (max-width:950px)
+{
+    .menu{
+        width:60%;
+    }
+}
+@media only screen and (max-width:650px)
+{
+    .menu{
+        position: absolute;
+        flex-direction: column;
+        height: calc(100% - 50px);
+        top:50px;
+        right:0;
+        background-color: aquamarine;
+        width: 65%;
+        transition: transform 0.5s ease-in; 
+        transform: translateX(100%);
+    }
+
+    
+    .line1{
+        transform: rotate(-45deg) translate(-6px);
+    }
+
+    .line2{
+        opacity: 0;
+    }
+    .line3{
+        transform: rotate(45deg) translate(-11px,-5px) ;
+    }
+    
+    
+    .showmenu{
+        transform: translate(0%);
+    }
+    .menu li{
+        margin: 0 auto;
+    }
+    .bar{
+        display: flex;
+    }
+}

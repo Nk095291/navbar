@@ -1,0 +1,63 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    display:flex;
+    justify-content: space-around;
+    background-color: aquamarine;
+    align-items: center;
+    height: 50px;
+    
+}
+.menu{
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+}
+
+.logo{
+    color: rgb(245, 4, 4);
+    letter-spacing:0.2rem;
+    font-size: 1.3rem;
+
+}
+.menu a{
+    color: rgb(245, 4, 4);
+    letter-spacing:0.3rem;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+.menu li{
+    list-style: none;
+}
+
+.bar{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+.bar .com
+{
+    width: 30px;
+    height: 2px;
+    background-color: rgb(245, 4, 4);
+    margin: 3px;
+    transition: transform 0.5s ease-in-out ;
+}
+
+/* .addanimation{
+    animation: animate 1s linear 0.2s;
+} */
+
+@keyframes animate{
+    from{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
