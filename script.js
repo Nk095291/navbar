@@ -16,7 +16,7 @@ function show() {
     let links = $('.menu li').toArray();
     links.forEach((e, i) => {
         if (flag) {
-            let delay = (i/10)+0.2;
+            let delay = (i/10);
             $(e).css({
                 "animation": `animate 1s linear ${delay}s`
             });
